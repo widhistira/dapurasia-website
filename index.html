@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Asia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="img/icon/logo .jpg"  class="logo"></a>
+            <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li><a class="#active"><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Asian food<br>Dengan cita rasa ala<span>Dapur Asia</span></h2>
+                <a href="menu.html">Menu</a> 
+                </div>
+                <div class="imgBox">
+                    <img src="img/ramen.png" class="dapurasia">
+                </div>
+             </div>
+             <ul class="thumb">
+                <li>Ramen<img src ="img/ramen.png" onclick="imgSlider('img/ramen.png');changeCircleColor('#017143')"></li>
+                <li>Fried Rice<img src ="img/katsu.png" onclick="imgSlider('img/katsu.png');changeCircleColor('rgb(221 149 169')"></li>
+                <li>Gyoza<img src ="img/gyoza1.png" onclick="imgSlider('img/gyoza1.png');changeCircleColor('rgb(202 65 163')"></li>
+                <li>Kimchi<img src ="img/kimchi.png" onclick="imgSlider('img/kimchi.png');changeCircleColor('rgb(110 173 147')"></li> 
+                <li>Jjigae<img src ="img/jigae2.png" onclick="imgSlider('img/jigae2.png');changeCircleColor('rgb(59 157 175')"></li> 
+             </ul>
+             <ul class="sci">
+                <li><a href="https://www.instagram.com/dapur_asia/"> <img src="img/Icon/ig2.png"></a></li>
+                <li><a href="https://food.grab.com/id/id/restaurant/dapur-asia-burangrang-delivery/6-C2E1N22YSB62R2"><img src="img/Icon/grab.png"></a></li>
+                <li><a href="https://gofood.link/a/zqSgRZA"><img src="img/Icon/gofood.png"></a></li>
+                <li><a href="#"><img src="img/Icon/shopeefood.png"></a></li>
+            </ul>
+     </section>
+
+     <script type="text/javascript">
+     function imgSlider(anything){
+        document.querySelector('.dapurasia').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+</body>
+</html>
